@@ -95,7 +95,7 @@ class VideoProcessor:
             candidate_langs = manual_langs if prefer_manual else auto_langs
 
             # 按优先级选语言：英语 > 简体中文 > 繁体中文 > 其他（取第一个）
-            _priority = ["en", "en-orig", "zh-Hans", "zh-Hant", "zh", "ja", "ko", "fr", "de", "es"]
+            _priority = ["en", "en-orig", "id", "zh-Hans", "zh-Hant", "zh", "ja", "ko", "fr", "de", "es"]
             prefer_lang = next(
                 (lang for lang in _priority if lang in candidate_langs),
                 candidate_langs[0],

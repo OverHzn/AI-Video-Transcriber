@@ -133,7 +133,7 @@ class Transcriber:
         获取支持的语言列表
         """
         return [
-            "zh", "en", "ja", "ko", "es", "fr", "de", "it", "pt", "ru",
+            "zh", "en", "id", "ja", "ko", "es", "fr", "de", "it", "pt", "ru",
             "ar", "hi", "th", "vi", "tr", "pl", "nl", "sv", "da", "no"
         ]
     

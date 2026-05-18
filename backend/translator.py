@@ -26,6 +26,7 @@ class Translator:
             "zh": "中文（简体）",
             "zh-tw": "中文（繁体）",
             "en": "English",
+            "id": "Bahasa Indonesia",
             "ja": "日本語",
             "ko": "한국어",
             "fr": "Français",
@@ -101,6 +102,8 @@ class Translator:
         c = str(code).lower().strip()
         if c.startswith("zh"):
             return "zh"
+        if c in {"indonesian", "bahasa indonesia", "indo"}:
+            return "id"
         if len(c) >= 2 and c[:2] in self.language_map:
             return c[:2]
         return c
